@@ -1,0 +1,10 @@
+public static void main(String[] args) throws IOException {
+
+        SpringApplication.run(Project.class, args);
+        ConvertJsonToJavaClass json = new ConvertJsonToJavaClass();
+        String packageName="com.cuculus.project.ouput";
+        File inputJson= new File("/home/maks/Documents/project/src/main/resources/Task.json");
+        File outputPojoDirectory=new File("."+File.separator+"exception");
+        outputPojoDirectory.mkdirs();
+        json.convertJsonToJavaClass(inputJson.toURI().toURL(), outputPojoDirectory, packageName, "Task");
+    }
