@@ -1,4 +1,4 @@
-package com.cuculus.multidrive.dto.zonos.json;
+
 
 import com.sun.codemodel.JCodeModel;
 import org.jsonschema2pojo.DefaultGenerationConfig;
