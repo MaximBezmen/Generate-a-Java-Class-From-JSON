@@ -4,7 +4,7 @@ public static void main(String[] args) throws IOException {
         ConvertJsonToJavaClass json = new ConvertJsonToJavaClass();
         String packageName="com.cuculus.project.ouput";
         File inputJson= new File("/home/maks/Documents/project/src/main/resources/Task.json");
-        File outputPojoDirectory=new File("."+File.separator+"exception");
+        File outputPojoDirectory=new File("."+File.separator+"JSON-OUTPUT");
         outputPojoDirectory.mkdirs();
         json.convertJsonToJavaClass(inputJson.toURI().toURL(), outputPojoDirectory, packageName, "Task");
     }
